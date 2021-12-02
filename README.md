@@ -17,8 +17,8 @@ Now you can build the kernel by running the script in the container:
 
 ```
 docker run --rm -it --name builder -v $PWD/workspace:/workspace \
-    -v $PWD/build.sh:/workspace/build.sh carlonluca/docker-rpi-ubuntu-kernel:focal \
-    /workspace/build.sh
+    -v $PWD/build.sh:/build.sh carlonluca/docker-rpi-ubuntu-kernel:focal \
+    /build.sh
 ```
 
 in workspace/out you should get the packages to install in your pi:
